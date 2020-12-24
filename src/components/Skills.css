@@ -1,0 +1,85 @@
+.skills_section{
+padding: 4rem 0;
+background: #fff;
+}
+.skills_section h1 {
+text-align: center;
+font-size: 45px;
+}
+.skills_wrap {
+    width: 70%;
+    margin:70px auto 0;
+}
+.skills_wrap .bars{
+    margin-bottom: 15px;
+}
+.skills_wrap  .info{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills_wrap  span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills_wrap  .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills_wrap  .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills_wrap  .html::before{
+    width: 90%;
+}
+.skills_wrap  .css::before{
+    width: 80%;
+}
+.skills_wrap  .js::before{
+    width: 80%;
+}
+.skills_wrap  .react::before{
+    width: 70%;
+}
+.skills_wrap  .node::before{
+    width: 40%;
+}
+.skills_wrap  .php::before{
+    width: 40%;
+}
+
+@media(max-width: 991px){
+    .skills_section{
+        padding:2rem 0;
+    }
+}
+@media(max-width: 770px){
+    .skills_wrap {
+        width: 70%;
+    }
+}
+@media(max-width: 570px){
+    .skills_section{
+        padding: 1.5rem 0;
+    }
+.skills_wrap {
+    width: 80%;
+    margin-top:50px;
+}
+}
+
+@media (max-width: 385px){
+.skills_wrap {
+    width: 90%;
+    margin-top: 30px;
+}
+}
